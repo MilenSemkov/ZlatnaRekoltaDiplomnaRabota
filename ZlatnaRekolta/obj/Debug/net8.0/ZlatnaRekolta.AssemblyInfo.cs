@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZlatnaRekolta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6545a3e1685141133744e30835835e1394774920")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZlatnaRekolta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZlatnaRekolta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
