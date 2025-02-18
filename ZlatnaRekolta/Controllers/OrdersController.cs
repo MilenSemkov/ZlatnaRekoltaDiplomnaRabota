@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,23 +13,38 @@ namespace ZlatnaRekolta.Controllers
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public OrdersController(ApplicationDbContext context)
+        public OrdersController(ApplicationDbContext context,UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Orders
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Orders.Include(o => o.Products).Include(o => o.Users);
-            return View(await applicationDbContext.ToListAsync());
+            if (User.IsInRole("Admin"))
+            {
+                var borsaDbContext = _context.Orders
+                                    .Include(o => o.Users)
+                                    .Include(o => o.Products);
+                return View(await borsaDbContext.ToListAsync());
+            }
+            else
+            {
+                var borsaDbContext = _context.Orders
+                                    .Include(o => o.Users)
+                                    .Include(o => o.Products)
+                                    .Where(x => x.UserId == _userManager.GetUserId(User));
+                return View(await borsaDbContext.ToListAsync());
+            }
         }
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
@@ -49,7 +65,7 @@ namespace ZlatnaRekolta.Controllers
         public IActionResult Create()
         {
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name");
+           // ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name");
             return View();
         }
 
@@ -62,12 +78,13 @@ namespace ZlatnaRekolta.Controllers
         {
             if (ModelState.IsValid)
             {
+                order.UserId = _userManager.GetUserId(User);
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", order.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
 
@@ -85,7 +102,7 @@ namespace ZlatnaRekolta.Controllers
                 return NotFound();
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", order.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
 
@@ -105,6 +122,7 @@ namespace ZlatnaRekolta.Controllers
             {
                 try
                 {
+                    order.UserId = _userManager.GetUserId(User);
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }
@@ -122,14 +140,14 @@ namespace ZlatnaRekolta.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", order.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
 
         // GET: Orders/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
@@ -151,6 +169,10 @@ namespace ZlatnaRekolta.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (_context.Orders == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Orders'  is null.");
+            }
             var order = await _context.Orders.FindAsync(id);
             if (order != null)
             {
@@ -163,7 +185,7 @@ namespace ZlatnaRekolta.Controllers
 
         private bool OrderExists(int id)
         {
-            return _context.Orders.Any(e => e.Id == id);
+            return (_context.Orders?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

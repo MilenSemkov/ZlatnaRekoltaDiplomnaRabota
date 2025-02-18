@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ZlatnaRekolta.Data;
+using ZlatnaRekolta.Services;
 
 namespace ZlatnaRekolta
 {
@@ -22,9 +23,20 @@ namespace ZlatnaRekolta
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            IMvcBuilder buildMVC = builder.Services.AddControllersWithViews();
 
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddControllers(op => op.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+            builder.Services.AddControllers(
+            options =>
+            options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+
+            builder.Services.AddRazorPages();
+
+            //PODtiskane na nullAttribute
+            builder.Services.AddControllers(
+                options =>
+                options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -38,6 +50,8 @@ namespace ZlatnaRekolta
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.PrepareDataBase().Wait();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
