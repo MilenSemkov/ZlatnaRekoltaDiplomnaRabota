@@ -6,124 +6,61 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ZlatnaRekolta.Data;
+using ZlatnaRekolta.Services;
 
 namespace ZlatnaRekolta.Controllers
 {
     public class DistributorsController : Controller
     {
-        private readonly ApplicationDbContext _context;
 
-        public DistributorsController(ApplicationDbContext context)
+        private readonly ApplicationDbContext _dbContext;
+        private readonly FortuneScraper _scraper;
+
+        public DistributorsController(ApplicationDbContext dbContext, FortuneScraper scraper)
         {
-            _context = context;
+            _dbContext = dbContext;
+            _scraper = scraper;
         }
 
-        // GET: Distributors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Distributors.ToListAsync());
+            var companies = await _dbContext.Distributors.ToListAsync();
+            return View(companies);
         }
 
-        // GET: Distributors/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Scrape()
         {
-            if (id == null)
+            try
             {
-                return NotFound();
-            }
+                var scraper = new FortuneScraper();
+                var companies = await scraper.ScrapeCompaniesAsync();
 
-            var distributor = await _context.Distributors
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (distributor == null)
-            {
-                return NotFound();
-            }
-
-            return View(distributor);
-        }
-
-        // GET: Distributors/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Distributors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description")] Distributor distributor)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(distributor);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(distributor);
-        }
-
-        // GET: Distributors/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var distributor = await _context.Distributors.FindAsync(id);
-            if (distributor == null)
-            {
-                return NotFound();
-            }
-            return View(distributor);
-        }
-
-        // POST: Distributors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description")] Distributor distributor)
-        {
-            if (id != distributor.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
+                foreach (var company in companies)
                 {
-                    _context.Update(distributor);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!DistributorExists(distributor.Id))
+                    if (!_dbContext.Distributors.Any(c => c.Name == company))
                     {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
+                        _dbContext.Distributors.Add(new Distributor { Name = company, Description = " " });
                     }
                 }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(distributor);
-        }
 
-        // GET: Distributors/Delete/5
+                await _dbContext.SaveChangesAsync();
+                TempData["Success"] = "Данните бяха успешно извлечени и записани!";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Грешка: " + ex.Message;
+            }
+
+            return RedirectToAction("Index");
+        }
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _dbContext.Origins == null)
             {
                 return NotFound();
             }
-
-            var distributor = await _context.Distributors
+            
+            var distributor = await _dbContext.Distributors
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (distributor == null)
             {
@@ -133,24 +70,29 @@ namespace ZlatnaRekolta.Controllers
             return View(distributor);
         }
 
-        // POST: Distributors/Delete/5
+        // POST: Orders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var distributor = await _context.Distributors.FindAsync(id);
+            if (_dbContext.Distributors == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Orders'  is null.");
+            }
+            var distributor = await _dbContext.Distributors.FindAsync(id);
             if (distributor != null)
             {
-                _context.Distributors.Remove(distributor);
+                _dbContext.Distributors.Remove(distributor);
             }
 
-            await _context.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DistributorExists(int id)
         {
-            return _context.Distributors.Any(e => e.Id == id);
+            return (_dbContext.Distributors?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
     }
 }

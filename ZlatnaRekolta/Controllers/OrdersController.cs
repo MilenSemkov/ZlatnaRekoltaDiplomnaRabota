@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using ZlatnaRekolta.Data;
 
@@ -62,10 +63,9 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Orders/Create
-        public IActionResult Create()
+        public IActionResult Create(int? ProductId)
         {
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name");
-           // ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name");
+            ViewBag.ProductId = new SelectList(_context.Products, "Id", "Name", ProductId);
             return View();
         }
 
@@ -74,11 +74,18 @@ namespace ZlatnaRekolta.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,ProductId,Quantity,Description,RegisterOn")] Order order)
+        public async Task<IActionResult> Create([Bind("ProductId,Quantity,Description")] Order order)
         {
             if (ModelState.IsValid)
             {
+
+                order.RegisterOn =DateTime.Now;
                 order.UserId = _userManager.GetUserId(User);
+                if (string.IsNullOrEmpty(order.UserId))
+                {
+                    return Unauthorized(); // Прекратява създаването, ако няма логнат потребител
+                }
+
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

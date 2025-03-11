@@ -2,9 +2,9 @@
 {
     public enum UnitOfMeasure
     {
-        unitCount,
-        kg,
-        g,
-        ml
+        бр,
+        кг,
+        г,
+        мл
     }
 }

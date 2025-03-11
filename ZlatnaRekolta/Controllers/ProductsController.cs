@@ -60,8 +60,9 @@ namespace ZlatnaRekolta.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,CategoryID,OriginID,DistributorID,Description,URLimage,Price,Quantity,UnitOfMe,DateRegister")] Product product)
+        public async Task<IActionResult> Create([Bind("Name,CategoryID,OriginID,DistributorID,Description,URLimage,Price,Quantity,UnitOfMe")] Product product)
         {
+            product.DateRegister = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(product);
@@ -98,18 +99,19 @@ namespace ZlatnaRekolta.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CategoryID,OriginID,DistributorID,Description,URLimage,Price,Quantity,UnitOfMe,DateRegister")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,CategoryID,OriginID,DistributorID,Description,URLimage,Price,Quantity,UnitOfMe")] Product product)
         {
             if (id != product.Id)
             {
                 return NotFound();
             }
+            product.DateRegister = DateTime.Now;
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(product);
+                    _context.Products.Update(product);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
