@@ -1,134 +1,159 @@
 ﻿@model IEnumerable<ZlatnaRekolta.Data.Product>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
-<h1>Ne znam</h1>
+
 
 <style>
-    #imgforproducts{
-        height:300px;
-    }
-    #cards{
-        height:600px;
-    }
+	#imgforproducts {
+		height: 300px;
+	}
+
+	#cards {
+		height: 600px;
+	}
 </style>
 <div class="row">
-    @foreach (var product in Model)
-    {
-        <div class="col-md-4">
-            <div id="cards" class="card">
-                <a asp-controller="Products" asp-action="Details" asp-route-Id="@product.Id" style="text-decoration:none; color:black;">
-                <img id="imgforproducts" src="@product.URLimage" class="card-img-top" alt="@product.Name">
-                <div class="card-body">
-                    <h5 class="card-title">@product.Name</h5>
-                    <p class="card-text">@product.Origins.Name</p>
-                    <p class="card-text">@product.Description</p>
-                    <p class="card-text"><strong>Цена: @product.Price лв./@product.UnitOfMe</strong></p>
-                    <br />
-                    <a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe" style="background-color:goldenrod;padding:1% 10%;text-decoration:none; color:black;font-size:20px;">Buy</a>
+	@foreach (var product in Model)
+	{
+		@if (product.Categories.Name == "Фреш")
+		{
+			<h1>Фрешoве</h1>
+		}
+		else if (product.Categories.Name == "Плодове")
+		{
+			{
+				<h1>Плодове</h1>
+			}
+		}
+		else if (product.Categories.Name == "Ядки")
+		{
+			{
+				<h1>Ядки</h1>
+			}
+		}
+		else
+		{
+			{
+				<h1>Зеленчуци</h1>
+			}
+		}
+		<div class="col-md-4">
+			<div id="cards" class="card">
+				<a asp-controller="Products" asp-action="Details" asp-route-Id="@product.Id" style="text-decoration:none; color:black;">
+					<img id="imgforproducts" src="@product.URLimage" class="card-img-top" alt="@product.Name">
+					<div class="card-body">
+						<h5 class="card-title">@product.Name</h5>
+						<p class="card-text">@product.Origins.Name</p>
+						<p class="card-text">@product.Description</p>
+						<p class="card-text"><strong>Цена: @product.Price лв./@product.UnitOfMe</strong></p>
+						<br />
+						<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe" style="background-color:goldenrod;padding:1% 10%;text-decoration:none; color:black;font-size:20px;">Buy</a>
 					</div>
 				</a>
-            </div>
-        </div>
-    }
+			</div>
+		</div>
+	}
 </div>
 <br />
 <br />
 <br />
 
-@if(User.IsInRole("Admin")){
-<p>
-	<a asp-action="Create">Нов запис</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Наименование
-                @* @Html.DisplayNameFor(model => model.Name) *@
-            </th>
-            <th>
-                Категория
-                @* @Html.DisplayNameFor(model => model.Categories) *@
-            </th>
-            <th>
-                Произход
-               @*  @Html.DisplayNameFor(model => model.Origins) *@
-            </th>
-            <th>
-                Вносители
-@*                 @Html.DisplayNameFor(model => model.Distributors) *@
-            </th>
-            <th>
-                Описание
-                @* @Html.DisplayNameFor(model => model.Description) *@
-            </th>
-            <th>
-                Снимка
-                @* @Html.DisplayNameFor(model => model.URLimage) *@
-            </th>
-            <th>
-                Цена
-                @* @Html.DisplayNameFor(model => model.Price) *@
-            </th>
-            <th>
-                Количество
-                @* @Html.DisplayNameFor(model => model.Quantity) *@
-            </th>
-            <th>
-                Мерна единица
-                @* @Html.DisplayNameFor(model => model.UnitOfMe) *@
-            </th>
-            <th>
-                Дата на регистрация
-               @*  @Html.DisplayNameFor(model => model.DateRegister) *@
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categories.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Origins.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Distributors.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-					<img src="@item.URLimage" width="100" />
-               @*  @Html.DisplayFor(modelItem => ) *@
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UnitOfMe)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateRegister)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+@if (User.IsInRole("Admin"))
+{
+	<p>
+		<a asp-action="Create">Нов запис</a>
+	</p>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>
+					Наименование
+					@* @Html.DisplayNameFor(model => model.Name) *@
+				</th>
+				<th>
+					Категория
+					@* @Html.DisplayNameFor(model => model.Categories) *@
+				</th>
+				<th>
+					Произход
+					@*  @Html.DisplayNameFor(model => model.Origins) *@
+				</th>
+				<th>
+					Вносители
+					@*                 @Html.DisplayNameFor(model => model.Distributors) *@
+				</th>
+				<th>
+					Описание
+					@* @Html.DisplayNameFor(model => model.Description) *@
+				</th>
+				<th>
+					Снимка
+					@* @Html.DisplayNameFor(model => model.URLimage) *@
+				</th>
+				<th>
+					Цена
+					@* @Html.DisplayNameFor(model => model.Price) *@
+				</th>
+				<th>
+					Количество
+					@* @Html.DisplayNameFor(model => model.Quantity) *@
+				</th>
+				<th>
+					Мерна единица
+					@* @Html.DisplayNameFor(model => model.UnitOfMe) *@
+				</th>
+				<th>
+					Дата на регистрация
+					@*  @Html.DisplayNameFor(model => model.DateRegister) *@
+				</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Categories.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Origins.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Distributors.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Description)
+					</td>
+					<td>
+						<img src="@item.URLimage" width="100" />
+						@*  @Html.DisplayFor(modelItem => ) *@
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Price)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Quantity)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.UnitOfMe)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.DateRegister)
+					</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a> |
+						<a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
+						<a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
 }

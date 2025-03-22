@@ -95,7 +95,7 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Orders/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id, string? Unim)
         {
             if (id == null)
             {
@@ -108,7 +108,9 @@ namespace ZlatnaRekolta.Controllers
                 return NotFound();
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", order.ProductId);
+            ViewBag.Unim = Unim;
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
+
             return View(order);
         }
 
@@ -129,6 +131,7 @@ namespace ZlatnaRekolta.Controllers
                 try
                 {
                     order.UserId = _userManager.GetUserId(User);
+                    order.RegisterOn = DateTime.Now;
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }

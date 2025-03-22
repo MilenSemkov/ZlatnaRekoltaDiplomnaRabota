@@ -20,3 +20,108 @@ html {
 body {
   margin-bottom: 60px;
 }
+.h1ForHome {
+    margin: 0 15%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.h5ForHome {
+    text-align: center;
+    color: dimgrey;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+    .slide.active {
+        opacity: 1;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align:center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#GaleryANDH {
+    margin-top: 10%;
+    background-color: #fff8e1;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+.instructions {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
