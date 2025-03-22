@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using ZlatnaRekolta.Data;
 
 namespace ZlatnaRekolta.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -63,9 +66,10 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Orders/Create
-        public IActionResult Create(int? ProductId)
+        public IActionResult Create(int? ProductId,string? Unim)
         {
             ViewBag.ProductId = new SelectList(_context.Products, "Id", "Name", ProductId);
+            ViewBag.Unim = Unim;
             return View();
         }
 
@@ -81,11 +85,6 @@ namespace ZlatnaRekolta.Controllers
 
                 order.RegisterOn =DateTime.Now;
                 order.UserId = _userManager.GetUserId(User);
-                if (string.IsNullOrEmpty(order.UserId))
-                {
-                    return Unauthorized(); // Прекратява създаването, ако няма логнат потребител
-                }
-
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

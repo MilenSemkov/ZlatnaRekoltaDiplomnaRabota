@@ -17,13 +17,12 @@
                 <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserName"></select>
             </div> *@
             <div class="form-group">
-                <label asp-for="ProductId" class="control-label"></label>
+                <label asp-for="ProductId" class="control-label">Наименование на продукт</label>
                 <select asp-for="ProductId" class ="form-control" asp-items="ViewBag.ProductId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Quantity" class="control-label"></label>
-                
-                <input asp-for="Quantity" class="form-control" type="number" min="1" step="1"  onkeydown="return false;" />
+                <label asp-for="Quantity" class="control-label">Количество в @ViewBag.Unim </label>
+                <input asp-for="Quantity" class="form-control" type="number" min="0.1" step="0.1" value="1.0"  onkeydown="return false;" />
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -19,10 +19,20 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? category)
         {
-            var applicationDbContext = _context.Products.Include(p => p.Categories).Include(p => p.Distributors).Include(p => p.Origins);
-            return View(await applicationDbContext.ToListAsync());
+            var allData = _context.Products.Include(p => p.Categories).
+                Include(p => p.Distributors).Include(p => p.Origins);
+            if (category != null)
+            {
+                var applicationDbContext = allData.Where(c => c.Categories.Name == category);
+                return View(await applicationDbContext.ToListAsync());
+
+
+            }
+            return View(await allData.ToListAsync());
+
+
         }
 
         // GET: Products/Details/5

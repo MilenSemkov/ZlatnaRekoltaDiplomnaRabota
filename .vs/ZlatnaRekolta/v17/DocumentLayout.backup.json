@@ -3,40 +3,95 @@
   "WorkspaceRootPath": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\unitofmeasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\unitofmeasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\distributorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\distributorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\originscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\originscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\distributorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\distributorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\origin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\origin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\distributor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\distributor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,14 +106,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\unitofmeasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\unitofmeasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -100,14 +147,6 @@
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -124,10 +163,6 @@
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\distributors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\origins\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\origins\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -136,16 +171,8 @@
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\origins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -164,15 +191,8 @@
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\baskets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -190,16 +210,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Origins.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\data\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\data\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|c:\\users\\milen\\desktop\\zlatna rekolta\\zlatnarekolta\\zlatnarekolta\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C60FFE40-58B3-49E2-91F2-2965FE83D5C8}|ZlatnaRekolta\\ZlatnaRekolta.csproj|solutionrelative:zlatnarekolta\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -209,190 +221,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OriginsController.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OriginsController.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\OriginsController.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OriginsController.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\OriginsController.cs",
-              "ViewState": "AgIAABkAAAAw/fTd/is5wDsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:16:40.386Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "DistributorsController.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\DistributorsController.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\DistributorsController.cs",
               "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\DistributorsController.cs",
               "RelativeToolTip": "ZlatnaRekolta\\Controllers\\DistributorsController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAwEsAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAABAQUHEJFg5wEAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T10:08:28.067Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Order.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Order.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Order.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Data\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:00:32.464Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAEEAAABAeHh+tkQjwEcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:44:35.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T07:19:30.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAGhn9/TADwBoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T09:32:30.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Create.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Orders\\Create.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Create.cshtml*",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Orders\\Create.cshtml*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-04T09:35:42.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAowFEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T06:44:35.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAABoAAAAAXXY70KAgwCwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T10:12:24.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Create.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Create.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T11:25:16.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAACEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T09:32:30.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Product.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Product.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Product.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Data\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T10:15:11.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T08:15:29.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProektPurviSrok.css",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
-              "RelativeDocumentMoniker": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
-              "RelativeToolTip": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
-              "ViewState": "AgIAALAAAAAAAAAAAAAkwMgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-06T10:12:56.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
-              "RelativeDocumentMoniker": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
-              "RelativeToolTip": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-06T10:50:40.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T09:05:26.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T08:21:57.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "UnitOfMeasure.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\UnitOfMeasure.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\UnitOfMeasure.cs",
@@ -404,7 +299,257 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T08:21:57.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OriginsController.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OriginsController.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\OriginsController.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\OriginsController.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\OriginsController.cs",
+              "ViewState": "AgIAADgAAAAAvN7xBIYcwDsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:16:40.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T11:25:00.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Categories.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-18T08:27:23.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T11:26:17.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAACgOeYYqBAhwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T11:25:52.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAACQpaU2PlgywBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T08:18:29.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAB0AAACA+/p2MuIEwDkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T07:16:38.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Origin.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Origin.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Origin.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Origin.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Origin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T10:03:06.468Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Order.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Order.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Order.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T09:07:52.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Distributor.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Distributor.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Distributor.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Distributor.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Distributor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T08:31:42.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Category.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Category.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Category.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T09:49:42.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Product.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Product.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Product.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Product.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T10:15:11.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T07:31:04.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Basket.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Basket.cs",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Basket.cs",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Basket.cs",
+              "RelativeToolTip": "ZlatnaRekolta\\Data\\Basket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:28:19.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T11:25:16.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAB0AAAAWXXY70KAgwDQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:12:24.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T08:15:29.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProektPurviSrok.css",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
+              "RelativeDocumentMoniker": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
+              "RelativeToolTip": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\ProektPurviSrok.css",
+              "ViewState": "AgIAALAAAAAAAAAAAAAkwMgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-06T10:12:56.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
+              "RelativeDocumentMoniker": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
+              "RelativeToolTip": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-06T10:50:40.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "ZlatnaRekolta\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T09:05:26.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -416,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -428,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -440,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -452,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -464,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\_ViewStart.cshtml",
@@ -476,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\_ViewImports.cshtml",
@@ -488,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -500,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "AllProducts.html",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\AllProducts.html",
               "RelativeDocumentMoniker": "..\\..\\12 \u041A\u043B\u0430\u0441\\\u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\ProektPurviSrok\\AllProducts.html",
@@ -512,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Program.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Program.cs",
@@ -524,31 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T11:25:00.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T08:18:29.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\ApplicationDbContext.cs",
@@ -560,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "ApplicationBuilderExtension.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Services\\ApplicationBuilderExtension.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Services\\ApplicationBuilderExtension.cs",
@@ -572,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Shared\\Error.cshtml",
@@ -584,19 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T07:19:30.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Origins\\Delete.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Origins\\Delete.cshtml",
@@ -608,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Origins\\Index.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Origins\\Index.cshtml",
@@ -620,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Distributors\\Index.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Distributors\\Index.cshtml",
@@ -632,19 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Details.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Details.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Details.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T11:26:17.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Details.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Details.cshtml",
@@ -656,19 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Categories\\Create.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-04T07:31:04.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Delete.cshtml",
@@ -680,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Distributors\\Delete.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Distributors\\Delete.cshtml",
@@ -692,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Categories\\Edit.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Categories\\Edit.cshtml",
@@ -704,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Baskets\\Index.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Baskets\\Index.cshtml",
@@ -716,19 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAqwDkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T07:16:38.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "BasketsController.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Controllers\\BasketsController.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Controllers\\BasketsController.cs",
@@ -740,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Baskets\\Edit.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Baskets\\Edit.cshtml",
@@ -752,16 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "dbo.Categories.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Categories.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-04T07:20:17.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "FortuneScraper.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Services\\FortuneScraper.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Services\\FortuneScraper.cs",
@@ -773,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "WikipediaScrapper.cs",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Services\\WikipediaScrapper.cs",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Services\\WikipediaScrapper.cs",
@@ -785,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "dbo.Origins.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Origins.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ZlatnaRekolta/True/SqlTable/dbo.Origins.sql",
@@ -794,19 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Basket.cs",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Basket.cs",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Data\\Basket.cs",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Data\\Basket.cs",
-              "RelativeToolTip": "ZlatnaRekolta\\Data\\Basket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T11:28:19.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Delete.cshtml",
               "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Delete.cshtml",
@@ -815,18 +867,6 @@
               "ViewState": "AgIAAAwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-20T11:26:13.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
-              "RelativeToolTip": "ZlatnaRekolta\\Views\\Products\\Edit.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAIBJwDIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T11:25:52.726Z"
             }
           ]
         }
