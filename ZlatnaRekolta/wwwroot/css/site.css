@@ -17,9 +17,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
-}
 .h1ForHome {
     margin: 0 15%;
     margin-top: 2%;
@@ -125,3 +122,84 @@ body {
     font-size: 40px;
     margin-bottom: 10px;
 }
+body {
+    background-color: darkgrey;
+}
+
+.navbar {
+    background-color: #222;
+}
+
+.auth-links {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.nav-item {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-cart {
+    position: absolute;
+    right: 42px;
+    top: 60px;
+}
+
+.nav-link:hover {
+    text-decoration-color: goldenrod;
+    font-weight: bold;
+}
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 40px;
+    width:100%;
+    margin-top:10%;
+}
+
+.footer-column {
+    font-size: 12px;
+}
+
+    .footer-column h3 {
+        border-bottom: 2px solid red;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        color: white;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-column ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .footer-column ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.footer-contact {
+    line-height: 1.8;
+}
+
+    .footer-contact a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }

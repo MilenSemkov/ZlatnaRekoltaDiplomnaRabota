@@ -4,8 +4,6 @@
 	ViewData["Title"] = "Index";
 }
 
-
-
 <style>
 	#imgforproducts {
 		height: 300px;
@@ -13,12 +11,15 @@
 
 	#cards {
 		height: 600px;
+		margin-bottom:20px;
 	}
 </style>
+
 <div class="row">
+	
 	@foreach (var product in Model)
 	{
-		@if (product.Categories.Name == "Фреш")
+		@* @if (product.Categories.Name == "Фреш")
 		{
 			<h1>Фрешoве</h1>
 		}
@@ -39,7 +40,7 @@
 			{
 				<h1>Зеленчуци</h1>
 			}
-		}
+		} *@
 		<div class="col-md-4">
 			<div id="cards" class="card">
 				<a asp-controller="Products" asp-action="Details" asp-route-Id="@product.Id" style="text-decoration:none; color:black;">
