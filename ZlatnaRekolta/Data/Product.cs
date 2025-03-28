@@ -1,4 +1,6 @@
-﻿namespace ZlatnaRekolta.Data
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ZlatnaRekolta.Data
 {
     public class Product
     {
@@ -15,6 +17,8 @@
         public string Description { get; set; }
         public string URLimage {  get; set; }
         public decimal Price { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:F3}")]
         public decimal Quantity {  get; set; }
        
         public UnitOfMeasure UnitOfMe { get; set; }

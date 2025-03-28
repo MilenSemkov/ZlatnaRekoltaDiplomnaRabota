@@ -2,13 +2,69 @@
 
 @{
     ViewData["Title"] = "Index";
+	var totalPrice = Model.Sum(item => item.Products.Price * item.Quantity);
 }
 
 <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div>
+	<table class="table table-bordered">
+		<thead class="table-dark text-center">
+			<tr>
+				@if (User.IsInRole("Admin"))
+				{
+					<th>Клиент</th>
+				}
+				<th></th>
+				<th>Артикул</th>
+				<th>Ед. цена</th>
+				<th>Количество</th>
+				<th>Описание</th>
+				@if (User.IsInRole("Admin"))
+				{
+					<th>Дата</th>
+				}
+				<th>Цена</th>
+				<th>Действия</th>
+			</tr>
+		</thead>
+		<tbody class="text-center">
+			@foreach (var item in Model)
+			{
+				<tr>
+					@if (User.IsInRole("Admin"))
+					{
+						<td>@Html.DisplayFor(modelItem => item.Users.UserName)</td>
+					}
+					<td>
+						<img src="@item.Products.URLimage" class="img-thumbnail" style="width: 50px;">
+					</td>
+					<td>@Html.DisplayFor(modelItem => item.Products.Name)</td>
+					<td>@Html.DisplayFor(modelItem => item.Products.Price) лв.</td>
+					<td>@Html.DisplayFor(modelItem => item.Quantity) @Html.DisplayFor(modelItem => item.Products.UnitOfMe)</td>
+					<td>@Html.DisplayFor(modelItem => item.Description)</td>
+					@if (User.IsInRole("Admin"))
+					{
+						<td>@Html.DisplayFor(modelItem => item.RegisterOn)</td>
+					}
+					<td>@Math.Round(item.Products.Price * item.Quantity, 2) лв.</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
+						<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	<div class="col-md-3">
+		<div class="card p-3 shadow">
+			<h4 class="text-center">📋 Преглед на поръчките</h4>
+			<hr />
+			<p><strong>Общо поръчки:</strong> @Model.Count()</p>
+			<p><strong>Общо:</strong> @totalPrice.ToString("F2") лв.</p>
+		</div>
+	</div>
+ </div>
+ @*
 <table class="table">
     <thead>
         <tr>
@@ -56,4 +112,4 @@
         </tr>
 }
     </tbody>
-</table>
+</table> *@

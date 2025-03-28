@@ -14,7 +14,6 @@
 		margin-bottom:20px;
 	}
 </style>
-
 <div class="row">
 	
 	@foreach (var product in Model)
@@ -51,7 +50,7 @@
 						<p class="card-text">@product.Description</p>
 						<p class="card-text"><strong>Цена: @product.Price лв./@product.UnitOfMe</strong></p>
 						<br />
-						<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe" style="background-color:goldenrod;padding:1% 10%;text-decoration:none; color:black;font-size:20px;">Buy</a>
+						<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe" style="background-color:goldenrod;padding:2% 10%;text-decoration:none; color:black;font-size:20px; justify-content:center; border-radius:8px; border:1px solid black;">Buy</a>
 					</div>
 				</a>
 			</div>
@@ -64,8 +63,10 @@
 
 @if (User.IsInRole("Admin"))
 {
+	<hr />
+	<br />
 	<p>
-		<a asp-action="Create">Нов запис</a>
+		<a asp-action="Create" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Нов запис</a>
 	</p>
 	<table class="table">
 		<thead>
@@ -99,12 +100,8 @@
 					@* @Html.DisplayNameFor(model => model.Price) *@
 				</th>
 				<th>
-					Количество
+					Налично количество
 					@* @Html.DisplayNameFor(model => model.Quantity) *@
-				</th>
-				<th>
-					Мерна единица
-					@* @Html.DisplayNameFor(model => model.UnitOfMe) *@
 				</th>
 				<th>
 					Дата на регистрация
@@ -137,21 +134,19 @@
 						@*  @Html.DisplayFor(modelItem => ) *@
 					</td>
 					<td>
-						@Html.DisplayFor(modelItem => item.Price)
+						@Html.DisplayFor(modelItem => item.Price) лв./@Html.DisplayFor(modelItem => item.UnitOfMe).
 					</td>
 					<td>
-						@Html.DisplayFor(modelItem => item.Quantity)
-					</td>
-					<td>
-						@Html.DisplayFor(modelItem => item.UnitOfMe)
+						@Html.DisplayFor(modelItem => item.Quantity) @Html.DisplayFor(modelItem => item.UnitOfMe).
 					</td>
 					<td>
 						@Html.DisplayFor(modelItem => item.DateRegister)
 					</td>
 					<td>
-						<a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a> |
-						<a asp-action="Details" asp-route-id="@item.Id">Детайли</a> |
-						<a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+						<a asp-action="Edit" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Редактирай</a>
+						<br />
+						<br />
+						<a asp-action="Delete" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;border:1px solid black;">Изтрий</a>
 					</td>
 				</tr>
 			}

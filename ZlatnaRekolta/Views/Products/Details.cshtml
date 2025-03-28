@@ -8,21 +8,28 @@
 
 <div>
 	<h4>@Html.DisplayFor(model => model.Name)</h4>
-	<hr />
-	@if(Model.Categories.Name=="Плодове"){
-		<a asp-action="Index" asp-route-category="Плодове" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
-	}
-	else if (Model.Categories.Name == "Зеленчуци")
+	@if (!User.IsInRole("Admin"))
 	{
-		<a asp-action="Index" asp-route-category="Зеленчуци" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+		<hr />
+		@if (Model.Categories.Name == "Плодове")
+		{
+			<a asp-action="Index" asp-route-category="Плодове" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+		}
+		else if (Model.Categories.Name == "Зеленчуци")
+		{
+			<a asp-action="Index" asp-route-category="Зеленчуци" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+		}
+		else if (Model.Categories.Name == "Ядки")
+		{
+			<a asp-action="Index" asp-route-category="Ядки" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+		}
+		else
+		{
+			<a asp-action="Index" asp-route-category="Фреш" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+		}
 	}
-	else if  (Model.Categories.Name == "Ядки")
-	{
-		<a asp-action="Index" asp-route-category="Ядки" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
-	}
-	else
-	{
-		<a asp-action="Index" asp-route-category="Фреш" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
+	else{
+		<a asp-action="Index" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
 	}
 	<br />
 	<br />
@@ -111,6 +118,6 @@
 
 
 
-		
+
 	}
 </div>

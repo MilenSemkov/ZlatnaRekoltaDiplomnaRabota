@@ -19,12 +19,35 @@ namespace ZlatnaRekolta.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
 
-        public OrdersController(ApplicationDbContext context,UserManager<User> userManager)
+        public OrdersController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
             _userManager = userManager;
         }
+        public IActionResult FinalizeOrder(string listOrder)
+        {
+            List<int> listId = listOrder.Split(',').Select(int.Parse).ToList();
+            foreach (int id in listId)
+            {
 
+                Order order = _context.Orders.FirstOrDefault(x => x.Id == id);
+                if (order == null) break;
+
+
+                Basket b = new Basket();
+                b.UserId = order.UserId;
+                b.ProductId = order.ProductId;
+                b.Quantity = order.Quantity;
+                b.Description = order.Description;
+                b.RegisterOn = DateTime.Now;
+
+                _context.Baskets.Add(b);
+                _context.Orders.Remove(order);
+                _context.SaveChanges();
+
+            }
+            return RedirectToAction("Index");
+        }
         // GET: Orders
         public async Task<IActionResult> Index()
         {
@@ -66,7 +89,7 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Orders/Create
-        public IActionResult Create(int? ProductId,string? Unim)
+        public IActionResult Create(int? ProductId, string? Unim)
         {
             ViewBag.ProductId = new SelectList(_context.Products, "Id", "Name", ProductId);
             ViewBag.Unim = Unim;
@@ -80,12 +103,24 @@ namespace ZlatnaRekolta.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductId,Quantity,Description")] Order order)
         {
+            if (order.Description == null)
+            {
+                order.Description = "-";
+            }
+            var product = _context.Products.Find(order.ProductId);
+            if (product.Quantity >= order.Quantity)
+            {
+                
+                product.Quantity -= order.Quantity;
+                _context.Products.Update(product);
+                _context.SaveChanges();
+            }
             if (ModelState.IsValid)
             {
 
-                order.RegisterOn =DateTime.Now;
+                order.RegisterOn = DateTime.Now;
                 order.UserId = _userManager.GetUserId(User);
-                _context.Add(order);
+                _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -93,6 +128,7 @@ namespace ZlatnaRekolta.Controllers
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
+
 
         // GET: Orders/Edit/5
         public async Task<IActionResult> Edit(int? id, string? Unim)

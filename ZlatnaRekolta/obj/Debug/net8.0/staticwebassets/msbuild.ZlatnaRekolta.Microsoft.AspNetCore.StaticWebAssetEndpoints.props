@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.52210c30m2.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"52210c30m2"},{"Name":"integrity","Value":"sha256-raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40="},{"Name":"label","Value":"_content/ZlatnaRekolta/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 06:12:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2XoRTV/\u002BDcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3682"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222XoRTV/\u002BDcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Mar 2025 22:46:05 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.tnkhkxg5dc.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tnkhkxg5dc"},{"Name":"integrity","Value":"sha256-2XoRTV/\u002BDcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA="},{"Name":"label","Value":"_content/ZlatnaRekolta/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3682"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222XoRTV/\u002BDcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Mar 2025 22:46:05 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3759"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Mar 2025 06:12:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -724,13 +724,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ZlatnaRekolta.ppblpnlzto.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 10:11:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 10:29:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/ZlatnaRekolta.ppblpnlzto.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ZlatnaRekolta.ppblpnlzto.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ppblpnlzto"},{"Name":"integrity","Value":"sha256-jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM="},{"Name":"label","Value":"_content/ZlatnaRekolta/ZlatnaRekolta.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Jan 2025 10:11:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jbNwoTgoYFx\u002BFf9y6cb2RavvoTbSzXK\u002BKGjxeUFkYWM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 27 Mar 2025 10:29:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

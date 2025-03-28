@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NqV9ZZU09SQvR2+EumeZwpYBgYg3YMtlsJhCOwgAuSc=",
+  "Hash": "XipADtq/ZYoBfyIFWeNNqq/kLCbv3fn7EUq0Y8MrJ8U=",
   "Source": "ZlatnaRekolta",
   "BasePath": "_content/ZlatnaRekolta",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tnkhkxg5dc",
-      "Integrity": "2XoRTV/+DcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA=",
+      "Fingerprint": "52210c30m2",
+      "Integrity": "raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2581,6 +2581,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/site.52210c30m2.css",
+      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 06:12:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "52210c30m2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2591,7 +2636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3682"
+          "Value": "3759"
         },
         {
           "Name": "Content-Type",
@@ -2599,11 +2644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2XoRTV/+DcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA=\""
+          "Value": "\"raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 22:46:05 GMT"
+          "Value": "Wed, 26 Mar 2025 06:12:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2613,52 +2658,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2XoRTV/+DcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.tnkhkxg5dc.css",
-      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3682"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2XoRTV/+DcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 23 Mar 2025 22:46:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tnkhkxg5dc"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-2XoRTV/+DcQBHWE44JdgNsxJ81Usoq4Np3T3N22a5PA="
+          "Value": "sha256-raD7cX9hcTERLDjhhsqgjiSqhZnJMGkAhA2J7G4fI40="
         }
       ]
     },
@@ -9743,7 +9743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:11:13 GMT"
+          "Value": "Thu, 27 Mar 2025 10:29:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9780,7 +9780,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:11:13 GMT"
+          "Value": "Thu, 27 Mar 2025 10:29:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9825,7 +9825,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:11:13 GMT"
+          "Value": "Thu, 27 Mar 2025 10:29:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9870,7 +9870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Jan 2025 10:11:13 GMT"
+          "Value": "Thu, 27 Mar 2025 10:29:57 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ZlatnaRekolta.Data;
+using static OpenQA.Selenium.BiDi.Modules.Script.RealmInfo;
 
 namespace ZlatnaRekolta.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class BasketsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -49,7 +52,7 @@ namespace ZlatnaRekolta.Controllers
         public IActionResult Create()
         {
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name");
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name");
             return View();
         }
 
@@ -57,7 +60,7 @@ namespace ZlatnaRekolta.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> Create([Bind("Id,UserId,ProductId,Quantity,Description,RegisterOn")] Basket basket)
         {
             if (ModelState.IsValid)
@@ -67,9 +70,24 @@ namespace ZlatnaRekolta.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", basket.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", basket.UserId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", basket.UserId);
             return View(basket);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateForOrder([Bind("Id,UserId,ProductId,Quantity,Description,RegisterOn")] Order order)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(order);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name", order.ProductId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
+            return View(order);
+        }
+        
 
         // GET: Baskets/Edit/5
         public async Task<IActionResult> Edit(int? id)

@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<ZlatnaRekolta.Data.Distributor>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Доставчици";
 }
 
-<h1>Index</h1>
+<h1>Доставчици</h1>
 
 <p>
     <form asp-action="Scrape" method="post">
-        <button type="submit" class="btn btn-success">Обнови фирми</button>
+        <button type="submit" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Обнови фирми</button>
     </form>
 </p>
 <table class="table">
@@ -35,7 +35,7 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Изтрий</a>
             </td>
         </tr>
 }

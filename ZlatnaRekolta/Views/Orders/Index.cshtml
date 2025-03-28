@@ -2,68 +2,75 @@
 
 @{
 	ViewData["Title"] = "Количка";
+	var totalPrice = Model.Sum(item => item.Products.Price * item.Quantity);
 }
+<h1 class="text-center">🛒 Количка</h1>
 
-<h1>Количка</h1>
-
-<table class="table">
-	<thead>
-		<tr>
-			@if (User.IsInRole("Admin"))
-			{
-				<th>
-					Клиент
-				</th>
-			}
-			<th>
-				Артикул
-			</th>
-			<th>
-				Количество
-			</th>
-			<th>
-				Описание
-			</th>
-			@if (User.IsInRole("Admin"))
-			{
-				<th>
-					@Html.DisplayNameFor(model => model.RegisterOn)
-				</th>
-			}
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-		@foreach (var item in Model)
-		{
-			<tr>
-				@if (User.IsInRole("Admin"))
+<div class="row">
+	<!-- Основна таблица -->
+	<div class="col-md-8">
+		<table class="table table-bordered">
+			<thead class="table-dark text-center">
+				<tr>
+					@if (User.IsInRole("Admin"))
+					{
+						<th>Клиент</th>
+					}
+					<th></th>
+					<th>Артикул</th>
+					<th>Ед. цена</th>
+					<th>Количество</th>
+					<th>Описание</th>
+					@if (User.IsInRole("Admin"))
+					{
+						<th>Дата</th>
+					}
+					<th>Цена</th>
+					<th>Действия</th>
+				</tr>
+			</thead>
+			<tbody class="text-center">
+				@foreach (var item in Model)
 				{
-					<td>
-						@Html.DisplayFor(modelItem => item.Users.UserName)
-					</td>
+					<tr>
+						@if (User.IsInRole("Admin"))
+						{
+							<td>@Html.DisplayFor(modelItem => item.Users.UserName)</td>
+						}
+						<td>
+							<img src="@item.Products.URLimage" class="img-thumbnail" style="width: 50px;">
+						</td>
+						<td>@Html.DisplayFor(modelItem => item.Products.Name)</td>
+						<td>@Html.DisplayFor(modelItem => item.Products.Price) лв.</td>
+						<td>@Html.DisplayFor(modelItem => item.Quantity) @Html.DisplayFor(modelItem => item.Products.UnitOfMe)</td>
+						<td>@Html.DisplayFor(modelItem => item.Description)</td>
+						@if (User.IsInRole("Admin"))
+						{
+							<td>@Html.DisplayFor(modelItem => item.RegisterOn)</td>
+						}
+						<td>@Math.Round(item.Products.Price * item.Quantity, 2) лв.</td>
+						<td>
+							<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
+							<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
+						</td>
+					</tr>
 				}
-				<td>
-					@Html.DisplayFor(modelItem => item.Products.Name)
-				</td>
-				<td>
+			</tbody>
+		</table>
+	</div>
 
-					@Html.DisplayFor(modelItem => item.Quantity)  @Html.DisplayFor(modelItem => item.Products.UnitOfMe)
-				</td>
-				<td>
-					@Html.DisplayFor(modelItem => item.Description)
-				</td>
-				@if (User.IsInRole("Admin"))
-				{
-					<td>
-						@Html.DisplayFor(modelItem => item.RegisterOn)
-					</td>
-				}
-				<td>
-					<a asp-action="Edit" asp-route-id="@item.Id" asp-route-unim="@item.Products.UnitOfMe">Редактирай</a> |
-					<a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
-				</td>
-			</tr>
-		}
-	</tbody>
-</table>
+	<!-- Странична секция с общата сума -->
+	<div class="col-md-4">
+		<div class="card p-3 shadow">
+			<h4 class="text-center">📋 Преглед на поръчката</h4>
+			<hr />
+			<p><strong>Общо артикули:</strong> @Model.Count()</p>
+			<p><strong>Общо:</strong> @totalPrice.ToString("F2") лв.</p>
+
+			<a asp-action="FinalizeOrder" asp-route-listOrder="@string.Join(",", Model.Select(x => x.Id))"
+			   class="btn btn-success btn-lg btn-block text-white font-weight-bold" style="background-color:goldenrod; border:none">
+				✅ Финализиране на поръчката (@totalPrice.ToString("F2") лв.)
+			</a>
+		</div>
+	</div>
+</div>
