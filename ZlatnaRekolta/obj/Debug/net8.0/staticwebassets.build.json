@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XipADtq/ZYoBfyIFWeNNqq/kLCbv3fn7EUq0Y8MrJ8U=",
+  "Hash": "mywbVYZpaKvQjalYU/Unudtoic4IDbEK4TBETa1DARY=",
   "Source": "ZlatnaRekolta",
   "BasePath": "_content/ZlatnaRekolta",
   "Mode": "Default",
@@ -2577,6 +2577,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\logoZlatna.ico",
+      "SourceId": "ZlatnaRekolta",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\",
+      "BasePath": "_content/ZlatnaRekolta",
+      "RelativePath": "logoZlatna#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jbfbbwjw66",
+      "Integrity": "T72qbYAL7Dh82oV+BrVbd/FZNi43EGHyubej+0riC8k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logoZlatna.ico"
     }
   ],
   "Endpoints": [
@@ -9717,6 +9738,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "logoZlatna.ico",
+      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\logoZlatna.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T72qbYAL7Dh82oV+BrVbd/FZNi43EGHyubej+0riC8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:21:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T72qbYAL7Dh82oV+BrVbd/FZNi43EGHyubej+0riC8k="
+        }
+      ]
+    },
+    {
+      "Route": "logoZlatna.jbfbbwjw66.ico",
+      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\logoZlatna.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T72qbYAL7Dh82oV+BrVbd/FZNi43EGHyubej+0riC8k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 13:21:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jbfbbwjw66"
+        },
+        {
+          "Name": "label",
+          "Value": "logoZlatna.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T72qbYAL7Dh82oV+BrVbd/FZNi43EGHyubej+0riC8k="
         }
       ]
     },

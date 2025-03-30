@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<ZlatnaRekolta.Data.Basket>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Финализирани поръчки";
 	var totalPrice = Model.Sum(item => item.Products.Price * item.Quantity);
 }
 
-<h1>Index</h1>
+<h1>Финализирани поръчки</h1>
 <div>
 	<table class="table table-bordered">
 		<thead class="table-dark text-center">

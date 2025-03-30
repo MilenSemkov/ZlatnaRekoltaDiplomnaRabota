@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\logoZlatna.ico",
+      "PackagePath": "staticwebassets\\logoZlatna.ico"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ZlatnaRekolta.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

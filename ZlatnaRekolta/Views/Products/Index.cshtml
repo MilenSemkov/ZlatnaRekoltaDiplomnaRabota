@@ -6,16 +6,16 @@
 
 <style>
 	#imgforproducts {
-		height: 300px;
+	height: 300px;
 	}
 
 	#cards {
-		height: 600px;
-		margin-bottom:20px;
+	height: 600px;
+	margin-bottom: 20px;
 	}
 </style>
 <div class="row">
-	
+
 	@foreach (var product in Model)
 	{
 		@* @if (product.Categories.Name == "Фреш")
@@ -40,17 +40,44 @@
 				<h1>Зеленчуци</h1>
 			}
 		} *@
-		<div class="col-md-4">
-			<div id="cards" class="card">
+		<div class="col-md-4 mb-4">
+			<div id="cards" class="card h-100 d-flex flex-column mb-2" >
 				<a asp-controller="Products" asp-action="Details" asp-route-Id="@product.Id" style="text-decoration:none; color:black;">
 					<img id="imgforproducts" src="@product.URLimage" class="card-img-top" alt="@product.Name">
-					<div class="card-body">
+					<div class="card-body d-flex flex-column">
 						<h5 class="card-title">@product.Name</h5>
 						<p class="card-text">@product.Origins.Name</p>
 						<p class="card-text">@product.Description</p>
 						<p class="card-text"><strong>Цена: @product.Price лв./@product.UnitOfMe</strong></p>
-						<br />
-						<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe" style="background-color:goldenrod;padding:2% 10%;text-decoration:none; color:black;font-size:20px; justify-content:center; border-radius:8px; border:1px solid black;">Buy</a>
+
+						<!-- Този div избутва бутоните надолу -->
+						<div class="mt-auto d-flex justify-content-center gap-3">
+							@if (!User.IsInRole("Admin"))
+							{
+								@if (product.Quantity > 0)
+								{
+									<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe"
+									style="background-color:goldenrod; padding:2% 10%; text-decoration:none; color:black; font-size:20px; justify-content:center; border-radius:8px; border:1px solid black; margin-right: 10px;">
+										Добави в количката
+									</a>
+								}
+								else
+								{
+									<span class="text-danger fw-bold">❌ Продуктът не е наличен</span>
+								}
+							}
+							else
+							{
+								<a asp-action="Edit" asp-route-id="@product.Id"
+								   style="background-color:goldenrod; padding:2% 10%; text-decoration:none; color:black; font-size:15px; justify-content:center; border-radius:8px; border:1px solid black; margin-right: 10px;">
+									Редактирай
+								</a>
+								<a asp-action="Delete" asp-route-id="@product.Id"
+								   style="background-color:goldenrod; padding:2% 10%; text-decoration:none; color:black; font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">
+									Изтрий
+								</a>
+							}
+						</div>
 					</div>
 				</a>
 			</div>
@@ -68,49 +95,43 @@
 	<p>
 		<a asp-action="Create" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Нов запис</a>
 	</p>
-	<table class="table">
-		<thead>
+	<table class="table table-bordered">
+		<thead class="table-dark text-center">
 			<tr>
 				<th>
 					Наименование
-					@* @Html.DisplayNameFor(model => model.Name) *@
+
 				</th>
 				<th>
 					Категория
-					@* @Html.DisplayNameFor(model => model.Categories) *@
+
 				</th>
 				<th>
 					Произход
-					@*  @Html.DisplayNameFor(model => model.Origins) *@
+
 				</th>
 				<th>
 					Вносители
-					@*                 @Html.DisplayNameFor(model => model.Distributors) *@
 				</th>
 				<th>
 					Описание
-					@* @Html.DisplayNameFor(model => model.Description) *@
 				</th>
 				<th>
 					Снимка
-					@* @Html.DisplayNameFor(model => model.URLimage) *@
 				</th>
 				<th>
 					Цена
-					@* @Html.DisplayNameFor(model => model.Price) *@
 				</th>
 				<th>
 					Налично количество
-					@* @Html.DisplayNameFor(model => model.Quantity) *@
 				</th>
 				<th>
 					Дата на регистрация
-					@*  @Html.DisplayNameFor(model => model.DateRegister) *@
 				</th>
 				<th></th>
 			</tr>
 		</thead>
-		<tbody>
+		<tbody class="text-center">
 			@foreach (var item in Model)
 			{
 				<tr>
@@ -131,7 +152,6 @@
 					</td>
 					<td>
 						<img src="@item.URLimage" width="100" />
-						@*  @Html.DisplayFor(modelItem => ) *@
 					</td>
 					<td>
 						@Html.DisplayFor(modelItem => item.Price) лв./@Html.DisplayFor(modelItem => item.UnitOfMe).
@@ -143,10 +163,13 @@
 						@Html.DisplayFor(modelItem => item.DateRegister)
 					</td>
 					<td>
-						<a asp-action="Edit" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Редактирай</a>
+						@* <a asp-action="Edit" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Редактирай</a>
 						<br />
 						<br />
 						<a asp-action="Delete" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;border:1px solid black;">Изтрий</a>
+ *@					
+												<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
+						<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
 					</td>
 				</tr>
 			}

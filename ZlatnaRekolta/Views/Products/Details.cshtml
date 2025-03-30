@@ -28,7 +28,8 @@
 			<a asp-action="Index" asp-route-category="Фреш" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
 		}
 	}
-	else{
+	else
+	{
 		<a asp-action="Index" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Назад</a>
 	}
 	<br />
@@ -45,7 +46,18 @@
 				<p class="card-text">@Html.DisplayFor(model => model.Description)</p>
 				<p class="card-text"><strong>Цена: @Html.DisplayFor(model => model.Price)лв./@Html.DisplayFor(model => model.UnitOfMe) </strong></p>
 				<br />
-				<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@Model.Id" style="background-color:goldenrod;padding:1% 10%;text-decoration:none; color:black;font-size:20px;">Buy</a>
+				@if (Model.Quantity > 0)
+				{
+					<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@Model.Id" asp-route-unim="@Model.UnitOfMe"
+					   style="background-color:goldenrod; padding:1% 10%; text-decoration:none; color:black; font-size:20px; justify-content:center; border-radius:8px; border:1px solid black;">
+						Добави в количката
+					</a>
+				}
+				else
+				{
+					<span class="text-danger fw-bold">❌ Продуктът не е наличен</span>
+				}
+
 			</div>
 		</div>
 	</div>
