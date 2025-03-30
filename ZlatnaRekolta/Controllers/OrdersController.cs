@@ -107,16 +107,17 @@ namespace ZlatnaRekolta.Controllers
             {
                 order.Description = "-";
             }
+
             var product = _context.Products.Find(order.ProductId);
-            if (product.Quantity >= order.Quantity)
+            if (order.Quantity > product.Quantity)
             {
-                
-                product.Quantity -= order.Quantity;
-                _context.Products.Update(product);
-                _context.SaveChanges();
+                ModelState.AddModelError("Quantity", $"Наличното количество е само {product.Quantity:f3} {product.UnitOfMe}.");
             }
             if (ModelState.IsValid)
             {
+                product.Quantity -= order.Quantity;
+                _context.Products.Update(product);
+                await _context.SaveChangesAsync();
 
                 order.RegisterOn = DateTime.Now;
                 order.UserId = _userManager.GetUserId(User);
@@ -218,6 +219,7 @@ namespace ZlatnaRekolta.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Orders'  is null.");
             }
+
             var order = await _context.Orders.FindAsync(id);
             if (order != null)
             {
