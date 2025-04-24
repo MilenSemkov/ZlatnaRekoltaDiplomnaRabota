@@ -35,7 +35,6 @@
 	<br />
 	<br />
 	<div id="cards" class="card d-flex flex-row align-items-center p-3">
-
 		<div class="col-md-6 text-center">
 			<img src="@Html.DisplayFor(model => model.URLimage)" width="400" class="img-fluid" />
 		</div>
@@ -57,7 +56,6 @@
 				{
 					<span class="text-danger fw-bold">❌ Продуктът не е наличен</span>
 				}
-
 			</div>
 		</div>
 	</div>
@@ -68,68 +66,25 @@
 	@if (User.IsInRole("Admin"))
 	{
 		<dl class="row">
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Name) *@ Наименование
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Name)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Categories) *@ Категории
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Categories.Name)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Origins) *@ Произход
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Origins.Name)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Distributors) *@ Вносител
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Distributors.Name)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Description) *@ Описание
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Description)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.URLimage) *@ Снимка
-			</dt>
-			<dd class="col-sm-10">
-				<img src="@Html.DisplayFor(model => model.URLimage)" width=100 />
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Price)  *@ Цена
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Price)
-			</dd>
-			<dt class="col-sm-2">
-				@* @Html.DisplayNameFor(model => model.Quantity) *@ Налично количество
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.Quantity) @Html.DisplayFor(model => model.UnitOfMe)
-			</dd>
-			<dt class="col-sm-2">
-				@Html.DisplayNameFor(model => model.DateRegister)
-			</dt>
-			<dd class="col-sm-10">
-				@Html.DisplayFor(model => model.DateRegister)
-			</dd>
+			<dt class="col-sm-2">Наименование</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+			<dt class="col-sm-2">Категории</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Categories.Name)</dd>
+			<dt class="col-sm-2">Произход</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Origins.Name)</dd>
+			<dt class="col-sm-2">Вносител</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Distributors.Name)</dd>
+			<dt class="col-sm-2">Описание</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Description)</dd>
+			<dt class="col-sm-2"> Снимка</dt>
+			<dd class="col-sm-10"><img src="@Html.DisplayFor(model => model.URLimage)" width=100 /></dd>
+			<dt class="col-sm-2">Цена</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Price)</dd>
+			<dt class="col-sm-2"> Налично количество</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.Quantity) @Html.DisplayFor(model => model.UnitOfMe)</dd>
+			<dt class="col-sm-2">@Html.DisplayNameFor(model => model.DateRegister)</dt>
+			<dd class="col-sm-10">@Html.DisplayFor(model => model.DateRegister)</dd>
 		</dl>
-
-
 		<a asp-action="Edit" asp-route-id="@Model?.Id">Реактирай</a>
-
-
-
-
-
 	}
 </div>

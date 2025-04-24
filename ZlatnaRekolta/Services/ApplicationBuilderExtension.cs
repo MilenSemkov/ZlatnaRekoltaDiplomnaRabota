@@ -32,14 +32,6 @@ namespace ZlatnaRekolta.Services
         }
         public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
         {
-            //foreach (var role in Enum.GetValues(Roles))
-            //{
-            //                    var roleExist = await roleManager.RoleExistsAsync(role); 
-            //    if (!roleExist)
-            //    { }
-            //}
-
-            //Seed Roles
             await roleManager.CreateAsync(new IdentityRole("Admin"));
             await roleManager.CreateAsync(new IdentityRole("User"));
             await roleManager.CreateAsync(new IdentityRole("Guest"));
@@ -47,7 +39,6 @@ namespace ZlatnaRekolta.Services
 
         public static async Task SeedSuperAdminAsync(UserManager<User> userManager)
         {
-            //Seed Default User
             var defaultUser = new User
             {
                 UserName = "superadmin",
@@ -65,9 +56,7 @@ namespace ZlatnaRekolta.Services
                 var result = await userManager.CreateAsync(defaultUser, "123!@#Qwe");
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(defaultUser, "Admin");
-                    //await userManager.AddToRoleAsync(defaultUser, Roles.Guest.ToString());
-                    //await userManager.AddToRoleAsync(defaultUser, Roles.User.ToString());                    
+                    await userManager.AddToRoleAsync(defaultUser, "Admin");                 
                 }
             }
         }

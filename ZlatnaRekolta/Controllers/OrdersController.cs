@@ -13,7 +13,7 @@ using ZlatnaRekolta.Data;
 
 namespace ZlatnaRekolta.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="User")]
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;

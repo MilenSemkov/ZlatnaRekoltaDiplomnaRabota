@@ -6,42 +6,51 @@
 
 <style>
 	#imgforproducts {
-	height: 300px;
+		height: 300px;
 	}
 
 	#cards {
-	height: 600px;
-	margin-bottom: 20px;
+		height: 600px;
+		margin-bottom: 20px;
 	}
 </style>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const sortSelect = document.querySelector('select[name="sortOrder"]');
+		sortSelect.addEventListener("change", function () {
+			this.form.submit();
+		});
+	});
+</script>
 <div class="row">
+	<form method="get" asp-controller="Products" asp-action="Index" class="row mb-3">
+		<div class="col-md-4">
+			<input type="text" name="searchString" value="@Context.Request.Query["searchString"]" class="form-control" placeholder="Търси по име..." />
+			<input type="hidden" name="category" value="@Context.Request.Query["category"]" />
+		</div>
+
+		<div class="col-md-4">
+			@{
+				var currentSort = Context.Request.Query["sortOrder"];
+			}
+			<select name="sortOrder" class="form-select" onchange="this.form.submit()">
+				<option value="">Сортирай по...</option>
+				<option value="Price" selected="@(currentSort == "Price")">Цена ↑</option>
+				<option value="price_desc" selected="@(currentSort == "price_desc")">Цена ↓</option>
+				<option value="Quantity" selected="@(currentSort == "Quantity")">Количество ↑</option>
+				<option value="quantity_desc" selected="@(currentSort == "quantity_desc")">Количество ↓</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<button type="submit" class="btn btn-dark">Търси</button>
+		</div>
+
+	</form>
 
 	@foreach (var product in Model)
 	{
-		@* @if (product.Categories.Name == "Фреш")
-		{
-			<h1>Фрешoве</h1>
-		}
-		else if (product.Categories.Name == "Плодове")
-		{
-			{
-				<h1>Плодове</h1>
-			}
-		}
-		else if (product.Categories.Name == "Ядки")
-		{
-			{
-				<h1>Ядки</h1>
-			}
-		}
-		else
-		{
-			{
-				<h1>Зеленчуци</h1>
-			}
-		} *@
 		<div class="col-md-4 mb-4">
-			<div id="cards" class="card h-100 d-flex flex-column mb-2" >
+			<div id="cards" class="card h-100 d-flex flex-column mb-2">
 				<a asp-controller="Products" asp-action="Details" asp-route-Id="@product.Id" style="text-decoration:none; color:black;">
 					<img id="imgforproducts" src="@product.URLimage" class="card-img-top" alt="@product.Name">
 					<div class="card-body d-flex flex-column">
@@ -50,14 +59,13 @@
 						<p class="card-text">@product.Description</p>
 						<p class="card-text"><strong>Цена: @product.Price лв./@product.UnitOfMe</strong></p>
 
-						<!-- Този div избутва бутоните надолу -->
 						<div class="mt-auto d-flex justify-content-center gap-3">
 							@if (!User.IsInRole("Admin"))
 							{
 								@if (product.Quantity > 0)
 								{
 									<a asp-controller="Orders" asp-action="Create" asp-route-ProductId="@product.Id" asp-route-unim="@product.UnitOfMe"
-									style="background-color:goldenrod; padding:2% 10%; text-decoration:none; color:black; font-size:20px; justify-content:center; border-radius:8px; border:1px solid black; margin-right: 10px;">
+									   style="background-color:goldenrod; padding:2% 10%; text-decoration:none; color:black; font-size:20px; justify-content:center; border-radius:8px; border:1px solid black; margin-right: 10px;">
 										Добави в количката
 									</a>
 								}
@@ -163,12 +171,7 @@
 						@Html.DisplayFor(modelItem => item.DateRegister)
 					</td>
 					<td>
-						@* <a asp-action="Edit" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Редактирай</a>
-						<br />
-						<br />
-						<a asp-action="Delete" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;border:1px solid black;">Изтрий</a>
- *@					
-												<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
+						<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">✏️</a>
 						<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
 					</td>
 				</tr>

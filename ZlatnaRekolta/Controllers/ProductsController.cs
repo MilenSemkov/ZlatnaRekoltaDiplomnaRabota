@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ZlatnaRekolta.Data;
 
+
 namespace ZlatnaRekolta.Controllers
 {
+    
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,21 +22,70 @@ namespace ZlatnaRekolta.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index(string? category)
+        public async Task<IActionResult> Index(string? category, string? searchString, string? sortOrder)
         {
-            var allData = _context.Products.Include(p => p.Categories).
-                Include(p => p.Distributors).Include(p => p.Origins);
-            if (category != null)
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["PriceSortParm"] = sortOrder == "Price" ? "price_desc" : "Price";
+            ViewData["QuantitySortParm"] = sortOrder == "Quantity" ? "quantity_desc" : "Quantity";
+
+            var products = _context.Products
+                .Include(p => p.Categories)
+                .Include(p => p.Distributors)
+                .Include(p => p.Origins)
+                .AsQueryable();
+
+            
+            if (!string.IsNullOrEmpty(searchString))
             {
-                var applicationDbContext = allData.Where(c => c.Categories.Name == category);
-                return View(await applicationDbContext.ToListAsync());
+                var matchedProduct = await _context.Products
+                    .Include(p => p.Categories)
+                    .FirstOrDefaultAsync(p => p.Name.ToLower().Contains(searchString.ToLower()));
 
+                if (matchedProduct != null)
+                {
+                    var matchedCategory = matchedProduct.Categories?.Name;
 
+                    if (!string.IsNullOrEmpty(category) && matchedCategory != category)
+                    {
+                        
+                        return RedirectToAction("Index", new { searchString = searchString, category = matchedCategory, sortOrder = sortOrder });
+                    }
+                }
+
+                products = products.Where(p => p.Name.Contains(searchString));
             }
-            return View(await allData.ToListAsync());
 
+            if (!string.IsNullOrEmpty(category))
+            {
+                products = products.Where(p => p.Categories.Name == category);
+            }
 
+            products = sortOrder switch
+            {
+                "Price" => products.OrderBy(p => p.Price),
+                "price_desc" => products.OrderByDescending(p => p.Price),
+                "Quantity" => products.OrderBy(p => p.Quantity),
+                "quantity_desc" => products.OrderByDescending(p => p.Quantity),
+                _ => products
+            };
+
+            return View(await products.ToListAsync());
         }
+        
+        
+        //public async Task<IActionResult> Index(string? category)
+        //{
+        //    var allData = _context.Products.Include(p => p.Categories).
+        //        Include(p => p.Distributors).Include(p => p.Origins);
+        //    if (category != null)
+        //    {
+        //        var applicationDbContext = allData.Where(c => c.Categories.Name == category);
+        //        return View(await applicationDbContext.ToListAsync());
+
+
+        //    }
+        //    return View(await allData.ToListAsync());
+        //}
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -55,7 +107,7 @@ namespace ZlatnaRekolta.Controllers
 
             return View(product);
         }
-
+[Authorize(Roles = "Admin")]
         // GET: Products/Create
         public IActionResult Create()
         {

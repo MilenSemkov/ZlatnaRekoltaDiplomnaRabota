@@ -55,11 +55,6 @@
                 <select asp-for="UnitOfMe" class="form-control" asp-items="@Html.GetEnumSelectList<UnitOfMeasure>()"></select>
                 <span asp-validation-for="UnitOfMe" class="text-danger"></span>
             </div>
-           @*  <div class="form-group">
-                <label asp-for="DateRegister" class="control-label"></label>
-                <input asp-for="DateRegister" class="form-control" />
-                <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div> *@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
