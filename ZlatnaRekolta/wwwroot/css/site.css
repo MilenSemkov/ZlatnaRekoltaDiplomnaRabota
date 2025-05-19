@@ -233,3 +233,65 @@ body {
 #imgForCart{
     width:100px;
 }
+
+.edit-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+    .edit-form-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    .edit-form-container label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .edit-form-container .form-control {
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-save {
+    background-color: goldenrod;
+    color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .btn-save:hover {
+        background-color: #e6b800;
+    }
+
+.btn-cancel {
+    padding: 10px 25px;
+    background-color: #ccc;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+    .btn-cancel:hover {
+        background-color: #bbb;
+    }

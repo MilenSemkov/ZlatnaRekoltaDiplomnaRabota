@@ -38,6 +38,9 @@
 						@if (User.IsInRole("Admin"))
 						{
 							<li class="nav-item">
+								<a class="nav-link text-white" asp-area="" asp-controller="Categories" asp-action="Index">Категории</a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link text-white" asp-area="" asp-controller="Origins" asp-action="Index">Произход</a>
 							</li>
 							<li class="nav-item">

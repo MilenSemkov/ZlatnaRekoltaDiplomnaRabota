@@ -1,42 +1,42 @@
-﻿@model ZlatnaRekolta.Data.Order
+﻿@using ZlatnaRekolta.Data
+@model ZlatnaRekolta.Data.Order
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Създаване на поръчка";
 }
 
-<h1>Добави</h1>
+<h1 class="mb-4" style="color: goldenrod;">🧾 Създаване на нова поръчка</h1>
 
-<h4>Количка</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="ProductId" class="control-label">Наименование на продукт</label>
-                <select asp-for="ProductId" class ="form-control" asp-items="ViewBag.ProductId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Quantity" class="control-label">Количество в @ViewBag.Unim </label>
-                <input asp-for="Quantity" class="form-control" type="number" min="0.001" step="0.01" value="1.000" />
-                <span asp-validation-for="Quantity" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Добави" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<div class="card shadow-lg p-4">
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-<div>
-    <a asp-action="Index">Назад</a>
+        <div class="mb-3">
+            <label asp-for="ProductId" class="form-label">Продукт</label>
+            <select asp-for="ProductId" class="form-select" asp-items="ViewBag.ProductId"></select>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Quantity" class="form-label">Количество (@ViewBag.Unim)</label>
+            <input asp-for="Quantity" class="form-control" type="number" min="0.001" step="0.01" value="1.000" />
+            <span asp-validation-for="Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Описание</label>
+            <input asp-for="Description" class="form-control" placeholder="Допълнителна информация..." />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-actions mt-4">
+            <button type="submit" class="btn-save">💾 Запази</button>
+            <a asp-action="Index" class="btn-cancel">⬅ Назад</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.555pd50gza.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"555pd50gza"},{"Name":"integrity","Value":"sha256-SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU="},{"Name":"label","Value":"_content/ZlatnaRekolta/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4382"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 19:14:30 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4382"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 19:14:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ifyf5AWo\u002BjJebNGQ4fdnakCYoCvdefxu3irWTt3CysM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5607"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ifyf5AWo\u002BjJebNGQ4fdnakCYoCvdefxu3irWTt3CysM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 19:43:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/css/site.t3gwv9m5sc.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"t3gwv9m5sc"},{"Name":"integrity","Value":"sha256-ifyf5AWo\u002BjJebNGQ4fdnakCYoCvdefxu3irWTt3CysM="},{"Name":"label","Value":"_content/ZlatnaRekolta/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5607"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ifyf5AWo\u002BjJebNGQ4fdnakCYoCvdefxu3irWTt3CysM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 19:43:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ZlatnaRekolta/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

@@ -1,33 +1,31 @@
 ﻿@model ZlatnaRekolta.Data.Origin
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Изтриване";
 }
 
-<h1>Delete</h1>
+<h1 class="text-danger">Изтриване на произход</h1>
 
-<h3>Сигурни ли сте че искате да изтриете това?</h3>
-<div>
-    <h4>Произход</h4>
-    <hr />
+<h4>Сигурни ли сте, че искате да изтриете следният произход:</h4>
+<hr />
+<div class="card shadow p-4 bg-light">
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+        <dt class="col-sm-4">Име на произхода:</dt>
+        <dd class="col-sm-8">@Model.Name</dd>
+
+        <dt class="col-sm-4">Описание:</dt>
+        <dd class="col-sm-8">@Model.Description</dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Назад</a>
-    </form>
 </div>
+
+<br />
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">
+        🗑 Потвърди изтриването
+    </button>
+    <a asp-action="Index" class="btn btn-dark ms-2">
+        Назад към списъка
+    </a>
+</form>
+

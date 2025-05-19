@@ -1,51 +1,39 @@
 ﻿@model ZlatnaRekolta.Data.Basket
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Изтриване";
 }
 
-<h1>Delete</h1>
+<h1 class="text-danger">Отказване на поръчка</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Basket</h4>
-    <hr />
+<h4>Сигурни ли сте, че искате да откажете следната поръчка?</h4>
+<hr />
+<div class="card shadow p-4 bg-light">
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Users)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Users.FirstName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Products)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Products.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RegisterOn)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RegisterOn)
-        </dd>
+        <dt class="col-sm-4">Потребител:</dt>
+        <dd class="col-sm-8">@Model.Users?.FirstName @Model.Users?.LastName</dd>
+
+        <dt class="col-sm-4">Продукт:</dt>
+        <dd class="col-sm-8">@Model.Products?.Name</dd>
+
+        <dt class="col-sm-4">Количество:</dt>
+        <dd class="col-sm-8">@Model.Quantity</dd>
+
+        <dt class="col-sm-4">Описание:</dt>
+        <dd class="col-sm-8">@Model.Description</dd>
+
+        <dt class="col-sm-4">Дата на добавяне:</dt>
+        <dd class="col-sm-8">@Model.RegisterOn.ToShortDateString()</dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
 </div>
+
+<br />
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">
+        🗑 Потвърди отказването
+    </button>
+    <a asp-action="Index" class="btn btn-dark ms-2">
+        Назад към списъка
+    </a>
+</form>

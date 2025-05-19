@@ -1,81 +1,55 @@
-﻿@model ZlatnaRekolta.Data.Product
+﻿ @model ZlatnaRekolta.Data.Product
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Изтриване";
 }
 
-<h1>Delete</h1>
+<h1 class="text-danger">Изтриване на продукт</h1>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Categories)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categories.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Origins)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Origins.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Distributors)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Distributors.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.URLimage)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.URLimage)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UnitOfMe)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UnitOfMe)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateRegister)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateRegister)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+<h4>Сигурни ли сте, че искате да изтриете продукта:</h4>
+<hr />
+<div class="card shadow p-4 bg-light">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="@Model.URLimage" class="img-fluid rounded" alt="Product Image" style="max-height:250px;" />
+        </div>
+        <div class="col-md-8">
+            <dl class="row">
+                <dt class="col-sm-4">Наименование:</dt>
+                <dd class="col-sm-8">@Model.Name</dd>
+
+                <dt class="col-sm-4">Категория:</dt>
+                <dd class="col-sm-8">@Model.Categories?.Name</dd>
+
+                <dt class="col-sm-4">Произход:</dt>
+                <dd class="col-sm-8">@Model.Origins?.Name</dd>
+
+                <dt class="col-sm-4">Дистрибутор:</dt>
+                <dd class="col-sm-8">@Model.Distributors?.Name</dd>
+
+                <dt class="col-sm-4">Описание:</dt>
+                <dd class="col-sm-8">@Model.Description</dd>
+
+                <dt class="col-sm-4">Цена:</dt>
+                <dd class="col-sm-8">@Model.Price лв./@Model.UnitOfMe</dd>
+
+                <dt class="col-sm-4">Количество:</dt>
+                <dd class="col-sm-8">@Model.Quantity</dd>
+
+                <dt class="col-sm-4">Регистриран на:</dt>
+                <dd class="col-sm-8">@Model.DateRegister.ToShortDateString()</dd>
+            </dl>
+        </div>
+    </div>
 </div>
+
+<br />
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">
+        🗑 Потвърди изтриването
+    </button>
+    <a asp-action="Index" class="btn btn-dark ms-2">
+        Назад към списъка
+    </a>
+</form>

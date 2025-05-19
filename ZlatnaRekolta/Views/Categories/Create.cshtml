@@ -1,36 +1,30 @@
 ﻿@model ZlatnaRekolta.Data.Category
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Добави";
 }
 
-<h1>Create</h1>
+<h1 class="mb-4" style="color: goldenrod;">➕ Добавяне на нова категория</h1>
 
-<h4>Category</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label">Наименование</label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label">Описание</label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+<div class="card shadow-lg p-4">
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-<div>
-    <a asp-action="Index">Назад</a>
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Наименование</label>
+            <input asp-for="Name" class="form-control" placeholder="Пример: Плод" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Описание</label>
+            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Описание на продукта..."></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-actions mt-4">
+            <button type="submit" class="btn-save">💾 Запази</button>
+            <a asp-action="Index" class="btn-cancel">⬅ Назад</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {

@@ -11,33 +11,34 @@
         <button type="submit" style="background-color:goldenrod;padding:1%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px;">Обнови фирми</button>
     </form>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Наименование
-                @* @Html.DisplayNameFor(model => model.Name) *@
-            </th>
-            <th>
-                Описание
-                @* @Html.DisplayNameFor(model => model.Description) *@
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                    <a asp-action="Delete" asp-route-id="@item.Id" style="background-color:goldenrod;padding:5% 8%;text-decoration:none; color:black;font-size:15px; justify-content:center; border-radius:8px; border:1px solid black;">Изтрий</a>
-            </td>
-        </tr>
-}
-    </tbody>
+<table class="table table-bordered">
+	<thead class="table-dark text-center">
+		<tr>
+			<th>
+				Наименование
+
+			</th>
+			<th>
+				Описание
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody class="text-center">
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Description)
+				</td>
+				<td>
+					<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">🗑</a>
+				</td>
+			</tr>
+		}
+	</tbody>
 </table>
+

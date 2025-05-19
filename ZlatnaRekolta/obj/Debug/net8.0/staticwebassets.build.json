@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9moezG2jldN+1av3/gLjj09NnO3qTWndt9vwkBz2ipE=",
+  "Hash": "OUpZkRjlSual2lOIL8NotPEXleKB+0Sdl3u69IR0wg4=",
   "Source": "ZlatnaRekolta",
   "BasePath": "_content/ZlatnaRekolta",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "555pd50gza",
-      "Integrity": "SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU=",
+      "Fingerprint": "t3gwv9m5sc",
+      "Integrity": "ifyf5AWo+jJebNGQ4fdnakCYoCvdefxu3irWTt3CysM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2602,51 +2602,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.555pd50gza.css",
-      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4382"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 19:14:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "555pd50gza"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2657,7 +2612,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4382"
+          "Value": "5607"
         },
         {
           "Name": "Content-Type",
@@ -2665,11 +2620,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU=\""
+          "Value": "\"ifyf5AWo+jJebNGQ4fdnakCYoCvdefxu3irWTt3CysM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 19:14:30 GMT"
+          "Value": "Mon, 19 May 2025 19:43:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2679,7 +2634,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SUcj3sdKStR3dnK7DizbsbBirATLEwflEeYngGv4gnU="
+          "Value": "sha256-ifyf5AWo+jJebNGQ4fdnakCYoCvdefxu3irWTt3CysM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.t3gwv9m5sc.css",
+      "AssetFile": "C:\\Users\\milen\\Desktop\\Zlatna Rekolta\\ZlatnaRekolta\\ZlatnaRekolta\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ifyf5AWo+jJebNGQ4fdnakCYoCvdefxu3irWTt3CysM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 19:43:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t3gwv9m5sc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ifyf5AWo+jJebNGQ4fdnakCYoCvdefxu3irWTt3CysM="
         }
       ]
     },
