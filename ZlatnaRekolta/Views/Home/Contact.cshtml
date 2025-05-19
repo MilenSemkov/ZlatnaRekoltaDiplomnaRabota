@@ -1,0 +1,106 @@
+﻿@{
+	ViewData["Title"] = "Контакти";
+}
+
+<style>
+	.contact-section {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		margin-top: 30px;
+	}
+
+	.contact-left, .contact-right {
+		flex: 1;
+		min-width: 300px;
+		background: #f9f9f9;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+	.btn-send {
+		background-color: goldenrod;
+		color: black;
+		border: none;
+	}
+
+		.btn-send:hover {
+			background-color: darkgoldenrod;
+		}
+
+	.location-container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.location-map {
+		width:100%;
+		height: 300px; 
+		border: 0;
+		display: block;
+	}
+</style>
+
+
+<div class="contact-section">
+	<div class="contact-left">
+		<h2>Имате въпроси?</h2>
+		<p>Изпратете ни съобщение или ни се обадете на посочените телефони. Ще се радваме да се свържете с нас и да ни кажете от какво имате нужда.</p>
+
+		<form onsubmit="handleFakeSubmit(event)">
+			<div class="form-group">
+				<label>Име *</label>
+				<input type="text" class="form-control" placeholder="Вашето име" required />
+			</div>
+			<div class="form-group">
+				<label>Имейл адрес *</label>
+				<input type="email" class="form-control" placeholder="Вашият имейл" required />
+			</div>
+			<div class="form-group">
+				<label>Телефон</label>
+				<input type="tel" class="form-control" placeholder="Телефон за връзка" />
+			</div>
+			<div class="form-group">
+				<label>Относно *</label>
+				<input type="text" class="form-control" placeholder="Тема на запитването" required />
+			</div>
+			<div class="form-group">
+				<label>Съобщение *</label>
+				<textarea class="form-control" rows="5" placeholder="Вашето съобщение" required></textarea>
+			</div>
+			<div class="form-group">
+				<label>Докажи, че не си робот: 1 + 8 = ?</label>
+				<input type="text" class="form-control" required />
+			</div>
+			<br />
+			<button type="submit" class="btn btn-send">Изпрати съобщение</button>
+		</form>
+	</div>
+	<div class="contact-right">
+		<h4>Контакти <strong>„Златна Реколта“</strong></h4>
+		<p><strong>📍 Адрес:</strong> ул. „Лъвски рид“ 3, кв. Манастирски ливади, София</p>
+		<p><strong>📞 Телефон:</strong><a href="tel:+359891111111">+359 891 111 111</a></p>
+		<p><strong>📧 Имейл:</strong> <a href="mailto:info@zlatna.rekota.bg">info@zlatna.rekolta.bg</a></p>
+		<hr />
+		<p><strong>Работно време:</strong><br />Понеделник – Неделя: 09:00 до 19:00</p>
+		<p><strong>Часове за доставка:</strong><br />Понеделник – Неделя: 10:00 до 17:00</p>
+		<hr />
+		<div class="location-container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.837053279784!2d23.283430775017706!3d42.66480831579567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84ea7065c6bf%3A0x471bf716588c0935!2z0LrQsi4g0JzQsNC90LDRgdGC0LjRgNGB0LrQuCDQu9C40LLQsNC00LgsINCj0LsuIOKAntCb0YrQstGB0LrQuCBw0LjQtOKAnCAzLCAxNjgwINCh0L7RhNC40Y8!5e0!3m2!1sbg!2sbg!4v1733402616953!5m2!1sbg!2sbg"
+					allowfullscreen=""
+					loading="lazy"
+					class="location-map">
+			</iframe>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<script>
+		function handleFakeSubmit(event) {
+			event.preventDefault();
+			alert("Благодарим ви! Това е примерна форма и съобщението не се изпраща.");
+		}
+	</script>
+}

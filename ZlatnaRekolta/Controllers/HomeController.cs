@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ZlatnaRekolta.Models;
+using System.Net;
+using System.Net.Mail;
 
 namespace ZlatnaRekolta.Controllers
 {
@@ -22,11 +24,18 @@ namespace ZlatnaRekolta.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }
+
